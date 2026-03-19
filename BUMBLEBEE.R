@@ -3,18 +3,10 @@ tuna <- read.csv("https://raw.githubusercontent.com/henryjhershey/FORK-ME-CRU/re
 summary(tuna)
 pdf("Kelly_Tuna.pdf")
 plot(tuna$catch~tuna$year, type="l",lwd=4 
-     ,col = "pink")
-pdf("Claire.pdf")
-plot(tuna$catch~tuna$year, type="l",lwd=4 
-     ,col = "blue")
-
-lines(tuna$index ~ tuna$year ,lty=3)
-      
+     #,color = CHANGE)
+)
+lines(tuna$index ~ tuna$year #,lty=CHANGE)
+      )
 dev.off()
-pdf("HANK.pdf")
-plot(tuna$catch~tuna$year, type="l",lwd=4 
-     ,color = "red")
 
-lines(tuna$index ~ tuna$year ,lty=2)
-      
-dev.off()
+#zoe test
